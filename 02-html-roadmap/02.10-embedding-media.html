@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Embedding Media in HTML</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="/index.html">← Back to Home</a>
+			</nav>
+			<h1>Embedding Media in HTML</h1>
+		</header>
+		<main>
+			<h2>Embedding Media</h2>
+			<p>
+				Embedding media in HTML involves integrating multimedia content like
+				images, audio, and video directly into a webpage. This allows users to
+				view or listen to these elements without having to download them
+				separately or navigate to another site. HTML provides specific elements,
+				such as <strong><code>&lt;img&gt;</code></strong
+				>, <strong><code>&lt;audio&gt;</code></strong
+				>, and <strong><code>&lt;video&gt;</code></strong
+				>, to facilitate this embedding process, along with attributes to
+				control their appearance and behavior.
+			</p>
+			<h3>Free Resources</h3>
+			<ul>
+				<li>
+					<a
+						href="https://learn.shayhowe.com/html-css/adding-media/"
+						target="_blank"
+						rel="noopener noreferrer"
+						>Article - Adding Media</a
+					>
+				</li>
+			</ul>
+			<section>
+				<h2>Images</h2>
+				<p>
+					Images are a way to display visual content on a webpage. They are
+					added to HTML documents using the
+					<strong><code>&lt;img&gt;</code></strong> tag, which links to an image
+					file. Attributes like <strong><code>src</code></strong> (source),
+					<strong><code>alt</code></strong> (alternative text),
+					<strong><code>width</code></strong
+					>, and <strong><code>height</code></strong> are used to specify the
+					image&apos;s location, description, and dimensions.
+				</p>
+				<h3>Free Resources</h3>
+				<ul>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/HTML_images"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - HTML images</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - &lt;img&gt;: The Image Embed element</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/watch?v=FmoYRiepmOE"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Video - HTML - Images | W3Schools</a
+						>
+					</li>
+				</ul>
+				<section>
+					<h2>img vs. figure</h2>
+					<p>
+						The <strong><code>&lt;img&gt;</code></strong> tag in HTML is used to
+						embed a simple image directly into a webpage. It requires a
+						<strong><code>src</code></strong> attribute to specify the image
+						source. On the other hand, the
+						<strong><code>&lt;figure&gt;</code></strong> element represents
+						self-contained content, like an image, illustration, diagram, code
+						snippet, etc., that is referenced as a single unit. It is typically
+						used with the
+						<strong><code>&lt;figcaption&gt;</code></strong> element to provide
+						a caption for the figure.
+					</p>
+					<h3>Free Resources</h3>
+					<ul>
+						<li>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Article - &lt;figure&gt;: The Figure with Optional Caption
+								element</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.dhiwise.com/post/the-ultimate-guide-to-using-html-figure-elements"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Article - The Ultimate Guide to Using HTML Figure Elements</a
+							>
+						</li>
+						<li>
+							<a
+								href="https://www.youtube.com/watch?v=Xn5_gDQFyJg"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Video - When to use image, figure and picture tag in html</a
+							>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Priority Hints</h2>
+					<p>
+						Priority Hints in HTML allow developers to indicate the relative
+						priority of fetching resources like images. This helps the browser
+						decide which images to load first, potentially improving page load
+						times and user experience by prioritizing content that is
+						immediately visible or more important to the user. This is achieved
+						using the fetchpriority attribute.
+					</p>
+					<h3>Free Resources</h3>
+					<ul>
+						<li>
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Priority"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Article - Priority header</a
+							>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h2>Audio</h2>
+				<p>
+					Audio on the web involves incorporating sound files into HTML
+					documents. This allows users to listen to music, podcasts, or other
+					audio content directly within a webpage. The HTML
+					<strong><code>&lt;audio&gt;</code></strong> element is used to embed
+					audio, providing attributes for controlling playback, displaying
+					controls, and specifying multiple source files for browser
+					compatibility.
+				</p>
+				<h3>Free Resources</h3>
+				<ul>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/audio"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - &lt;audio&gt;: The Embed Audio element</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/watch?v=uof_zYxtnp0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Video - Learn HTML audio in 5 minutes!</a
+						>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Video</h2>
+				<p>
+					The <strong><code>&lt;video&gt;</code></strong> element in HTML is
+					used to embed video content directly into a webpage. It allows you to
+					display video files, control playback, and provide options for users
+					to interact with the video, such as pausing, playing, adjusting
+					volume, and viewing in fullscreen. The element supports various video
+					formats and attributes to customize the video&apos;s appearance and
+					behavior.
+				</p>
+				<h3>Free Resources</h3>
+				<ul>
+					<li>
+						<a
+							href="https://www.youtube.com/watch?v=ly36kn0ug4k"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Course - HTML & CSS - How to Embed a YouTube Video in Your
+							Website</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - &lt;video&gt;: The Video Embed element</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/watch?v=BAx2GaMW2qA"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - Learn HTML video in 4 minutes!</a
+						>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Content Security Policy</h2>
+				<p>
+					<strong>Content Security Policy (CSP)</strong> is a security standard
+					introduced to prevent cross-site scripting (XSS), clickjacking, and
+					other code injection attacks. It works by allowing you to define a
+					whitelist of sources that the browser is permitted to load resources
+					from. This helps to control the origins of scripts, stylesheets,
+					images, and other assets, effectively reducing the attack surface of a
+					web application.
+				</p>
+				<h3>Free Resources</h3>
+				<ul>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - Content Security Policy (CSP)</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - Content Security Policy Cheat Sheet</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/watch?v=-LjPRzFR5f0"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Video - Content Security Policy Explained</a
+						>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>iframe</h2>
+				<p>
+					An <strong><code>iframe</code></strong> (Inline Frame) is an HTML
+					element that allows you to embed another HTML document within the
+					current HTML page. It essentially creates a window within your webpage
+					where you can display content from a different source, such as another
+					website, a video, or even another HTML file on your own server.
+				</p>
+				<h3>Free Resources</h3>
+				<ul>
+					<li>
+						<a
+							href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/iframe"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - &lt;iframe&gt;: The Inline Frame element</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://world.siteground.com/kb/what-is-iframe/"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Article - What is an iframe, and how do you use it on your
+							website?</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/watch?v=aRGdDy18qfY"
+							target="_blank"
+							rel="noopener noreferrer"
+							>Video - Learn HTML iframes in 3 minutes</a
+						>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Ejemplos Prácticos de Inserción</h2>
+				<p>
+					A continuación, se presentan ejemplos reales utilizando recursos
+					públicos de la red.
+				</p>
+
+				<article>
+					<h3>1. Imagen con <code>&lt;img&gt;</code></h3>
+					<p>Código utilizado:</p>
+					<pre><code>&lt;img src="https://picsum.photos/600/300" alt="Imagen aleatoria de Picsum" width="600" height="300"&gt;</code></pre>
+					<img
+						src="https://picsum.photos/600/300"
+						alt="Imagen aleatoria de Picsum"
+						width="600"
+						height="300"
+					/>
+				</article>
+
+				<hr />
+
+				<article>
+					<h3>2. Contenido semántico con <code>&lt;figure&gt;</code></h3>
+					<p>Código utilizado:</p>
+					<pre><code>&lt;figure&gt;
+    &lt;img src="https://picsum.photos/id/237/400/250" alt="Un perro labrador negro"&gt;
+    &lt;figcaption&gt;Figura 1: Los elementos 'figure' ayudan al SEO y la accesibilidad.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+					<figure>
+						<img
+							src="https://picsum.photos/id/237/400/250"
+							alt="Un perro labrador negro"
+						/>
+						<figcaption>
+							Figura 1: Los elementos 'figure' ayudan al SEO y la accesibilidad.
+						</figcaption>
+					</figure>
+				</article>
+
+				<hr />
+
+				<article>
+					<h3>3. Audio con <code>&lt;audio&gt;</code></h3>
+					<p>Código utilizado:</p>
+					<pre><code>&lt;audio controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"&gt;
+    Tu navegador no soporta el elemento de audio.
+&lt;/audio&gt;</code></pre>
+					<audio
+						controls
+						src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+					>
+						Tu navegador no soporta el elemento de audio.
+					</audio>
+				</article>
+
+				<hr />
+
+				<article>
+					<h3>4. Video con <code>&lt;video&gt;</code></h3>
+					<p>Código utilizado:</p>
+					<pre><code>&lt;video controls width="400" poster="https://picsum.photos/400/225"&gt;
+    &lt;source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4"&gt;
+    Hubo un problema al cargar el video.
+&lt;/video&gt;</code></pre>
+					<video controls width="400" poster="https://picsum.photos/400/225">
+						<source
+							src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+							type="video/mp4"
+						/>
+						Hubo un problema al cargar el video.
+					</video>
+				</article>
+
+				<hr />
+
+				<article>
+					<h3>5. Video Externo (YouTube) vía <code>&lt;iframe&gt;</code></h3>
+					<p>Código utilizado:</p>
+					<pre><code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+						title="YouTube video player"
+						frameborder="0"
+						allow="
+							accelerometer;
+							autoplay;
+							clipboard-write;
+							encrypted-media;
+							gyroscope;
+							picture-in-picture;
+						"
+						allowfullscreen
+					></iframe>
+				</article>
+			</section>
+		</main>
+		<footer>
+			<p><a href="/index.html">← Back to Home</a></p>
+			<p>Part of Frontend Notebook by JoEduDev</p>
+		</footer>
+	</body>
+</html>
