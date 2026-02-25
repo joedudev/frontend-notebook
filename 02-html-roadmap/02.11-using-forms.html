@@ -164,6 +164,157 @@
 					</li>
 				</ul>
 			</section>
+
+			<section>
+				<h2>Ejemplos Prácticos de Formularios</h2>
+				<p>
+					A continuación, se presentan ejemplos que aplican los conceptos de
+					etiquetas, entradas y restricciones mencionados anteriormente.
+				</p>
+
+				<article>
+					<h3>1. Formulario de Inicio de Sesión (Login)</h3>
+					<p>
+						Este ejemplo utiliza tipos de entrada básicos como
+						<code>text</code> y <code>password</code> para recolectar datos de
+						usuario.
+					</p>
+					<p>Código utilizado:</p>
+					<pre><code>&lt;form action="#" method="POST"&gt;
+    &lt;div&gt;
+        &lt;label for="username"&gt;Usuario:&lt;/label&gt;
+        &lt;input type="text" id="username" name="username" required&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;label for="pass"&gt;Contraseña:&lt;/label&gt;
+        &lt;input type="password" id="pass" name="pass" required&gt;
+    &lt;/div&gt;
+    &lt;button type="submit"&gt;Entrar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+					<form
+						action="#"
+						method="POST"
+						style="border: 1px solid #ccc; padding: 1em; border-radius: 8px"
+					>
+						<div style="margin-bottom: 10px">
+							<label for="username">Usuario:</label>
+							<input
+								type="text"
+								id="username"
+								name="username"
+								required
+								placeholder="Ej. dev_user"
+							/>
+						</div>
+						<div style="margin-bottom: 10px">
+							<label for="pass">Contraseña:</label>
+							<input type="password" id="pass" name="pass" required />
+						</div>
+						<button type="submit">Entrar</button>
+					</form>
+				</article>
+
+				<hr />
+
+				<article>
+					<h3>2. Formulario de Feedback (Select y Textarea)</h3>
+					<p>
+						Aquí empleamos el elemento <code>&lt;select&gt;</code> para opciones
+						múltiples y <code>&lt;textarea&gt;</code> para entradas de texto
+						extensas.
+					</p>
+					<p>Código utilizado:</p>
+					<pre><code>&lt;form&gt;
+    &lt;label for="service"&gt;¿Qué servicio utilizaste?&lt;/label&gt;
+    &lt;select id="service" name="service"&gt;
+        &lt;option value="web"&gt;Desarrollo Web&lt;/option&gt;
+        &lt;option value="api"&gt;Diseño de API&lt;/option&gt;
+        &lt;option value="cloud"&gt;Servicios Cloud&lt;/option&gt;
+    &lt;/select&gt;
+    
+    &lt;label for="comments"&gt;Comentarios:&lt;/label&gt;
+    &lt;textarea id="comments" name="comments" rows="4" cols="30"&gt;&lt;/textarea&gt;
+&lt;/form&gt;</code></pre>
+
+					<form
+						style="border: 1px solid #ccc; padding: 1em; border-radius: 8px"
+					>
+						<div style="margin-bottom: 10px">
+							<label for="service">¿Qué servicio utilizaste?</label><br />
+							<select id="service" name="service">
+								<option value="web">Desarrollo Web</option>
+								<option value="api">Diseño de API</option>
+								<option value="cloud">Servicios Cloud</option>
+							</select>
+						</div>
+						<div style="margin-bottom: 10px">
+							<label for="comments">Comentarios:</label><br />
+							<textarea
+								id="comments"
+								name="comments"
+								rows="3"
+								style="width: 100%"
+								placeholder="Escribe tu opinión aquí..."
+							></textarea>
+						</div>
+						<button type="button">Enviar Comentario</button>
+					</form>
+				</article>
+
+				<hr />
+
+				<article>
+					<h3>3. Registro con Validación Nativa (Constraints)</h3>
+					<p>
+						Este formulario aplica restricciones como <code>required</code>,
+						<code>minlength</code> y tipos específicos de datos para asegurar la
+						calidad de la información.
+					</p>
+					<p>Código utilizado:</p>
+					<pre><code>&lt;form&gt;
+    &lt;label for="email"&gt;Correo Electrónico:&lt;/label&gt;
+    &lt;input type="email" id="email" required&gt;
+
+    &lt;label for="age"&gt;Edad (mínimo 18):&lt;/label&gt;
+    &lt;input type="number" id="age" min="18" max="99"&gt;
+
+    &lt;label for="zip"&gt;Código Postal (5 dígitos):&lt;/label&gt;
+    &lt;input type="text" id="zip" pattern="[0-9]{5}" title="Cinco dígitos numéricos"&gt;
+    
+    &lt;button type="submit"&gt;Registrar&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+					<form
+						style="border: 1px solid #ccc; padding: 1em; border-radius: 8px"
+					>
+						<div style="margin-bottom: 10px">
+							<label for="email">Correo Electrónico:</label><br />
+							<input
+								type="email"
+								id="email"
+								required
+								placeholder="user@example.com"
+							/>
+						</div>
+						<div style="margin-bottom: 10px">
+							<label for="age">Edad (mínimo 18):</label><br />
+							<input type="number" id="age" min="18" max="99" />
+						</div>
+						<div style="margin-bottom: 10px">
+							<label for="zip">Código Postal (5 dígitos):</label><br />
+							<input
+								type="text"
+								id="zip"
+								pattern="[0-9]{5}"
+								title="Cinco dígitos numéricos"
+								placeholder="12345"
+							/>
+						</div>
+						<button type="submit">Registrar</button>
+					</form>
+				</article>
+			</section>
 		</main>
 		<footer>
 			<p><a href="/index.html">← Back to Home</a></p>
